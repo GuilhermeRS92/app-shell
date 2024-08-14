@@ -3,7 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { StorageService } from './storage.service';
 import { CookieService } from 'ngx-cookie-service';
 
-fdescribe('StorageService', () => {
+describe('StorageService', () => {
   let service: StorageService;
   let storage: Storage;
   let cookie: CookieService;
