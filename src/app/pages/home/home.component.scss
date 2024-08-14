@@ -1,0 +1,24 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    user-select: none;
+    .title, .highlight{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .highlight{
+        color: var(--main);
+    }
+    .caption{
+        font-size: 1.5rem;
+        color: var(--gray);
+    }
+    .description{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        color: var(--gray);
+    }
+}

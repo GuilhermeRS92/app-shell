@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app-shell';
+  title = 'Teste Front End - Teddy';
+
+  constructor(
+    public router: Router,
+    private primengConfig: PrimeNGConfig
+  ) {}
+
+  ngOnInit() {
+      this.primengConfig.ripple = true;
+  }
+
 }

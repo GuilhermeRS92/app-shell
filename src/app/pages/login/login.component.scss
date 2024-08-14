@@ -1,0 +1,68 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .card{
+        min-width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 40px 32px;
+        border-radius: 12px;
+        background-color: var(--off-white);
+        .card-header{
+            color: var(--main);
+            text-align: center;
+            h3{
+                font-size: 24px;
+            }
+        }
+        .card-body{
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .form-group{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    label{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: var(--secondary);
+                    }
+                    input{
+                        padding: 8px;
+                        border: 1px solid var(--light-gray);
+                        border-radius: 4px;
+                        font-size: 16px;
+                    }
+                    .invalid{
+                        border: 1px solid var(--danger);
+                    }
+                }
+                .form-checkbox{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    input{
+                        cursor: pointer;
+                    }
+                    label{
+                        font-size: 16px;
+                        color: var(--secondary);
+                    }
+                }
+                .errors{
+                    text-align: center;
+                    color: var(--danger);
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
